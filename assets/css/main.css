@@ -1,0 +1,115 @@
+/* Header */
+.navbar_icon{
+    width: 110px;
+    margin-top: -7px;
+}
+.navbar{
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(0,0,0,0.12);    
+    padding: 16px 30px;
+}
+.navbar-items{
+    margin-left: 10px;
+}
+.navbar_item{
+    padding: 2px 10px 4px;
+    border-radius: 20px;
+    position: relative;
+}
+.navbar_item::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;left: 2px;
+    width: 80px;
+    height: 20px;
+}
+.navbar_item:hover .subnav{
+    display: block;
+}   
+.navbar_link{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar_item--main{
+    background-color: #ba71da;
+    margin-left: 12px;
+}
+.navbar-toggler-icon{
+    font-size: 10px;
+    padding-bottom: 21px;
+}
+.subnav{
+    padding: 0;
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.1);
+    top: 26px;
+    left: 2px;
+    display: none;
+    animation: slidein ease 0.4s;
+}
+.subnav_item{
+    list-style-type: none;
+    width: 110px;
+    padding: 4px 14px;
+    border-top: 0.5px solid rgba(0,0,0,0.05);
+}
+.subnav_item:hover{
+    background-color: rgba(0,0,0,0.05);
+}
+.subnav_link{
+    color: #858585;
+}
+/* Slider */
+.slider{
+    position: relative;
+    padding-top: 50%;
+    height: 90vh;
+    background: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-2.jpg) top center / cover no-repeat ;
+}
+.slider_text{
+    position: absolute;
+    bottom: 150px;
+    justify-content: center;
+    padding: 50px 230px;
+}
+.form-select{
+    width: 42%;
+    margin: 20px auto 30px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.slider_items{
+    display: flex;
+    margin: auto;
+}
+.slider_item{
+    flex: 1;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.01);
+    margin: 0 10px;
+    background-color: rgba(0,0,0,0.23); 
+    cursor: pointer;   
+}
+.item-img{
+    height: 50px;
+    transform: scale(0.5);
+}
+.item-name{
+    color: white;
+}
+@keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
