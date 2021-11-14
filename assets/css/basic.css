@@ -1,6 +1,6 @@
 html{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 *{
     box-sizing: inherit;
@@ -11,12 +11,22 @@ a{
 a:hover{
     color: rgb(173, 169, 169) !important;
 }
+/* size */
+.font-border{
+    font-weight: 100 !important;
+}
+.font-small{
+    font-size: 12px !important;
+}
 /* space */
 .ml-28{
     margin-right: -28px !important;
 }
 .ml-16{
     margin-right: -16px !important;
+}
+.margin-tb-70{
+    margin: 70px 0;
 }
 /* primary */
 .center {
@@ -27,37 +37,43 @@ a:hover{
     color: white;
 }
 .first-text_name{
-    font-size: 32px;
-    font-weight: 900;
-    margin-bottom: 10px;
+    font-size: 54px;
+    font-weight: bolder;
+    margin-bottom: 14px;
 }
 .first-text_decs{
     letter-spacing: 1.4px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
 }
 .second-text{
-
+    color: #333;
 }
 .second-text_name{
-
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 40px;
 }
 .second-text_decs{
-
+    font-size: 18px;
+    opacity: 0.8;
 }
 /* responsity */
 .grid{
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
-.row{
+.grid-row{
     display: flex;
+    flex-wrap: wrap;
 }
 .col-second{
     flex: 50%;
 }
 .col-third{
-    flex: 33%;
+    flex: 30%;
 }

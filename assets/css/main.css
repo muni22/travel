@@ -1,19 +1,17 @@
 /* Header */
 .navbar_icon{
-    width: 110px;
+    width: 160px;
     margin-top: -7px;
 }
 .navbar{
-    z-index: 1;
-    position: fixed;
     background-color: rgba(0,0,0,0.12);    
-    padding: 16px 30px;
+    padding: 30px 40px;
 }
 .navbar-items{
     margin-left: 10px;
 }
 .navbar_item{
-    padding: 2px 10px 4px;
+    padding: 2px 16px 4px;
     border-radius: 20px;
     position: relative;
 }
@@ -21,9 +19,9 @@
     content: "";
     display: block;
     position: absolute;
-    top: 20px;left: 2px;
+    top: 24px;left: 14px;
     width: 80px;
-    height: 20px;
+    height: 21px;
 }
 .navbar_item:hover .subnav{
     display: block;
@@ -36,6 +34,7 @@
 .navbar_item--main{
     background-color: #ba71da;
     margin-left: 12px;
+    padding: 6px 18px;
 }
 .navbar-toggler-icon{
     font-size: 10px;
@@ -47,15 +46,15 @@
     background-color: white;
     border: 1px solid rgba(0,0,0,0.2);
     box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.1);
-    top: 26px;
+    top: 34px;
     left: 2px;
     display: none;
     animation: slidein ease 0.4s;
 }
 .subnav_item{
     list-style-type: none;
-    width: 110px;
-    padding: 4px 14px;
+    width: 140px;
+    padding: 8px 14px;
     border-top: 0.5px solid rgba(0,0,0,0.05);
 }
 .subnav_item:hover{
@@ -68,18 +67,18 @@
 .slider{
     position: relative;
     padding-top: 50%;
-    height: 90vh;
-    background: url("http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-2.jpg") top center / cover no-repeat ;
+    height: 88vh;
+    background: url(/assets/img/slider.jpg) top center / cover no-repeat ;
 }
 .slider_text{
     position: absolute;
-    bottom: 150px;
+    bottom: 24vh;
     justify-content: center;
-    padding: 50px 230px;
+    padding: 50px 24vw;
 }
 .form-select{
     width: 42%;
-    margin: 20px auto 30px;
+    margin: 40px auto 50px;
     cursor: pointer;
     border-radius: 30px;
 }
@@ -102,7 +101,68 @@
 .item-name{
     color: white;
 }
-@keyframes slidein {
+.navbar-toggler{
+    border: 2px solid;
+}
+/* Content: Destinations */
+.card{
+    border: none;
+}
+.card-img{
+    height: 360px;
+    padding: 12px;
+    filter:brightness(92%);
+    border-radius: 16px;
+}
+.card-img-overlay{
+    text-align: left;
+}
+.card-title{
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    opacity: 0.8;
+    font-size: 25px;
+}
+.card-text{
+    position: absolute;
+    bottom: 26px;
+    left: 30px;
+    font-size: 20px;
+}
+.des-sub{
+    position: absolute;
+    top: 12px;
+    left: 12.4px;
+    background-color: #14b9d5;
+    width: 94.4%;
+    height:93.4%;
+    display: none;
+}
+.des-main:hover .des-sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: delay ease-in-out .7s;
+}
+.des_items-place{
+    margin: 10px 0 20px;
+    cursor: pointer;
+}
+.des_items-view{
+    color: #14b9d5;
+    background-color: white;
+    border-radius: 30px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+/* Content Holiday */
+.holiday-card-img{
+    padding-top: 20%;
+    margin: 0 -16vw;
+    background: url(/assets/img/7.jpg) center/ cover no-repeat;
+}
+@keyframes slidein{
     from {
         opacity: 0;
         transform: translateY(-10px);
@@ -113,3 +173,11 @@
         transform: translateX(0);
     }
   }
+@keyframes delay{
+    from { 
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
