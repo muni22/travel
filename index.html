@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="assets/css/basic.css">
     <link rel="stylesheet" href="assets/bootcss/bootstrap.css">
+    <link rel="stylesheet" href="assets/fontawesome/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="assets/css/basic.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/fontawesome/fontawesome-free-5.15.4-web/css/all.css">
     <title>Document</title>
 </head>
 <body>
@@ -52,7 +52,7 @@
                         </span>
                         <span class="navbar_item"><a href="" class="navbar_link">About Us</a></span>
                         <span class="navbar_item"><a href="" class="navbar_link">Contact</a></span>
-                        <span class="navbar_item navbar_item--main"><a href="" class="navbar_link">Book Now</a></span>
+                        <span class="navbar_item box navbar-box"><a href="" class="navbar_link">Book Now</a></span>
                     </span>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -63,9 +63,9 @@
           </nav>
     </div>
     <div class="slider row">
-        <div class="slider_text grid">
+        <div class="slider_text">
             <div class="first-text center">
-                <div class="first-text_name">Search your next Holiday</div>
+                <div class="first-text_name">Search your next <i class="first-decoration">Holiday</i></div>
                 <div class="first-text_decs">Check our best promotions</div>
             </div>
             <select class="form-select center" aria-label="Default select example">
@@ -100,18 +100,19 @@
         </div>
     </div>
     <div class="container">
+        <!-- Destination -->
         <div class="container-des grid">
-            <div class="second-text center margin-tb-70">
+            <div class="center margin-tb-70">
                 <div class="second-text_decs">Our proposals</div>
-                <div class="second-text_name">Our destinations</div>
+                <div class="second-text_name">Our <i class="second-decoration"> destinations</i></div>
                 <div class="container-des_items">
                     <div class="grid-row">
                         <div class="col-third">
                             <div class="des-main card text-white">
                                 <img src="assets/img/1.jpg" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                    <i class="card-title fas fa-hotel"></i>
-                                    <p class="card-text">Europe <br>2 Packages</p>
+                                    <i class="card-title des-card-title fas fa-hotel"></i>
+                                    <p class="card-text des-card-text">Europe <br>2 Packages</p>
                                 </div>
                                 <div class="des-sub card text-white">
                                     <h3 class="des_items-name">Packages</h3>
@@ -124,8 +125,8 @@
                             <div class="des-main card text-white">
                                 <img src="assets/img/2.jpg" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                    <i class="card-title fas fa-umbrella-beach"></i>
-                                    <p class="card-text">Viet Nam <br>4 Packages</p>
+                                    <i class="card-title des-card-title fas fa-umbrella-beach"></i>
+                                    <p class="card-text des-card-text">Viet Nam <br>4 Packages</p>
                                 </div>
                                 <div class="des-sub card text-white">
                                     <h3 class="des_items-name">Packages</h3>
@@ -138,8 +139,8 @@
                             <div class="des-main card text-white">
                                 <img src="assets/img/3.jpg" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                    <i class="card-title fas fa-igloo"></i>
-                                    <p class="card-text">United Stated <br>2 Packages</p>
+                                    <i class="card-title des-card-title fas fa-igloo"></i>
+                                    <p class="card-text des-card-text">United Stated <br>2 Packages</p>
                                 </div>
                                 <div class="des-sub card text-white">
                                     <h3 class="des_items-name">Packages</h3>
@@ -155,8 +156,8 @@
                             <div class="des-main card text-white">
                                 <img src="assets/img/4.jpg" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                    <i class="card-title fas fa-archway"></i>
-                                    <p class="card-text">Netherlands <br>3 Packages</p>
+                                    <i class="card-title des-card-title fas fa-archway"></i>
+                                    <p class="card-text des-card-text">Netherlands <br>3 Packages</p>
                                 </div>
                                 <div class="des-sub card text-white">
                                     <h3 class="des_items-name">Packages</h3>
@@ -169,8 +170,8 @@
                             <div class="des-main card text-white">
                                 <img src="assets/img/5.jpg" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                    <i class="card-title fas fa-mountain"></i>
-                                    <p class="card-text">Asia<br>1 Package</p>
+                                    <i class="card-title des-card-title fas fa-mountain"></i>
+                                    <p class="card-text des-card-text">Asia<br>1 Package</p>
                                 </div>
                                 <div class="des-sub card text-white">
                                     <h3 class="des_items-name">Packages</h3>
@@ -183,8 +184,8 @@
                             <div class="des-main card text-white">
                                 <img src="assets/img/6.jpg" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                    <i class="card-title fas fa-glass-martini"></i>
-                                    <p class="card-text">Japan <br>2 Packages</p>
+                                    <i class="card-title des-card-title fas fa-glass-martini"></i>
+                                    <p class="card-text des-card-text">Japan <br>2 Packages</p>
                                 </div>
                                 <div class="des-sub card text-white">
                                     <h3 class="des_items-name">Packages</h3>
@@ -196,14 +197,27 @@
                     </div>
             </div>
         </div>
+        <!-- Holiday -->
         <div class="container-holiday">
             <div class="card text-white">
                 <div class="holiday-card-img"></div>
                 <div class="card-img-overlay">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Last updated 3 mins ago</p>
+                  <h5 class="card-title first-text_name holiday-card-title">Your <br> Next <i class="first-decoration"> Holiday</i></h5>
+                  <a href="#" class="card-text box holiday-box">View All Packages</a>
                 </div>
             </div>    
+        </div>
+        <!-- Beaches  -->
+        <div class="grid-row">
+            <div class="col-second container-beaches margin-tb-70">
+                <div class="second-text_decs">North Ameria</div>
+                <div class="second-text_name">The Best <i class="second-decoration">Beaches</i> </div>
+                <p class="beaches-text">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie ultricies mauris ac. </p>
+                <p class="beaches-text">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie ultricies mauris ac.</p>
+                <span class="cost-linethrough">800</span>
+                <span class="cost">500$</span>
+                <span> / FOR PERSON</span>   
+            </div>
         </div>
     </div>
     <div class="footer">

@@ -1,56 +1,66 @@
-@media screen and (max-width: 760px){
+@media screen and (max-width: 1200px){
     .col-third{
         flex: 90%;
     }
     .card-img{
         height: auto;
     }
-    .des-sub{
-        width: 95.4%;
-        height: 95.4%;
-    }
     .navbar-items{
         display: none;
     }
+    .slider_item:first-child{
+        margin-left: 0;
+    }
+    .slider_item:last-child{
+        margin-right: 0;
+    }
     .first-text_name{
-        font-size: 40px;
+        font-size: 46px;
     }
     .first-text_decs{
         font-size: 16px;
     }
+    .holiday-card-img{
+        padding-top: 30%;
+        margin: 0 -19%;
+        background: url(/assets/img/7.jpg) center/ cover no-repeat;
+    }
+}
+@media screen and (max-width: 760px){
+    .des-sub{
+        width: 95.4%;
+        height: 95.4%;
+    }
+    .slider_text{
+        margin-top: 100px;
+    }
 }
 @media screen and (min-width: 759px) and (max-width: 978px){
-    .col-third{
-        flex: 90%;
-    }
-    .card-img{
-        height: auto;
-    }
     .des-sub{
         width: 96.5%;
         height: 96.6%;
     }
-    .navbar-items{
-        display: none;
+    .slider_text{
+        margin-top: 80px;
     }
 }    
-@media screen and (min-width: 979px) and (max-width: 1200px){
-    .col-third{
-        flex: 90%;
-    }
-    .card-img{
-        height: auto;
-    }
+@media screen and (min-width: 979px) and (max-width: 1200px){   
     .des-sub{
         width: 97.4%;
         height: 97.6%;
     }
-    .navbar-items{
-        display: none;
+    .slider_text{
+        margin-top: 50px;
     }
 }
 @media screen and (min-width: 1201px) and (max-width: 1400px){
     .des-sub{
         width: 93.5%;
+    }
+    .slider_item:first-child{
+        margin-left: 100px;
+    }
+    .slider_item:last-child{
+        margin-right: 100px;
     }
 }

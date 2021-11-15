@@ -26,15 +26,13 @@
 .navbar_item:hover .subnav{
     display: block;
 }   
+.navber-box{
+    background-color: #14b9d5;
+}
 .navbar_link{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-}
-.navbar_item--main{
-    background-color: #ba71da;
-    margin-left: 12px;
-    padding: 6px 18px;
 }
 .navbar-toggler-icon{
     font-size: 10px;
@@ -66,15 +64,14 @@
 /* Slider */
 .slider{
     position: relative;
-    padding-top: 50%;
-    height: 88vh;
+    padding-top: 18%;
+    height: 100vh;
     background: url(/assets/img/slider.jpg) top center / cover no-repeat ;
 }
 .slider_text{
     position: absolute;
-    bottom: 24vh;
     justify-content: center;
-    padding: 50px 24vw;
+    padding: 0 16vw;
 }
 .form-select{
     width: 42%;
@@ -93,6 +90,12 @@
     margin: 0 10px;
     background-color: rgba(0,0,0,0.23); 
     cursor: pointer;   
+}
+.slider_item:first-child{
+    margin-left: 240px;
+}
+.slider_item:last-child{
+    margin-right: 240px;
 }
 .item-img{
     height: 50px;
@@ -117,14 +120,14 @@
 .card-img-overlay{
     text-align: left;
 }
-.card-title{
+.des-card-title{
     position: absolute;
     left: 40px;
     top: 30px;
     opacity: 0.8;
     font-size: 25px;
 }
-.card-text{
+.des-card-text{
     position: absolute;
     bottom: 26px;
     left: 30px;
@@ -159,8 +162,22 @@
 /* Content Holiday */
 .holiday-card-img{
     padding-top: 20%;
-    margin: 0 -16vw;
+    margin: 0 -9.5%;
     background: url(/assets/img/7.jpg) center/ cover no-repeat;
+}
+.holiday-card-title{
+    position: absolute;
+    left: 50px;
+    top: 28%;
+}
+.holiday-box{
+    position: absolute;
+    right: 60px;
+    top: 41%;
+    padding: 8px 30px;
+    font-size: 20px;
+    background-color: white;
+    color:  rgb(236, 80, 18);
 }
 @keyframes slidein{
     from {
