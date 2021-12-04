@@ -26,8 +26,8 @@
 .navbar_item:hover .subnav{
     display: block;
 }   
-.navber-box{
-    background-color: #14b9d5;
+.navbar-box{
+    background-color: #f81888;
 }
 .navbar_link{
     text-decoration: none;
@@ -153,13 +153,18 @@
     cursor: pointer;
 }
 .des_items-view{
+    text-transform: uppercase;
     color: #14b9d5;
     background-color: white;
     border-radius: 30px;
-    padding: 4px 10px;
+    padding: 5px 10px 6px;
     cursor: pointer;
+    font-weight: 700;
 }
 /* Content Holiday */
+.container-holiday{
+    
+}
 .holiday-card-img{
     padding-top: 20%;
     margin: 0 -9.5%;
@@ -179,12 +184,128 @@
     background-color: white;
     color:  rgb(236, 80, 18);
 }
+/* Beaches */
+
+.container-beaches{
+    flex: 1;
+    padding-right: 20px;
+}
+.beaches-box{
+    background-color: #1bbc9b;
+    padding: 6px 30px 8px;
+    max-width: fit-content;
+    margin: 30px 0 30px 0;
+}
+.beaches-box-link{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.container-beaches-img{
+    flex: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 35%;
+    background: url(/assets/img/8.jpg) center / cover no-repeat;
+}
+.beaches-time{
+    background-color: #14b9d5;
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    max-width: 700px;
+    padding: 10px 30px;
+}
+.beaches-time > .beaches-date{
+    position: relative;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 30px;
+}
+.beaches-time .beaches-date-text{
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 14px;
+    font-weight: 900;
+}
+.beaches-date::before{
+    position: absolute;
+    content: "/";
+    color: rgb(139, 124, 124);
+    opacity: 0.4;
+    display: block;
+    font-size: 30px;
+    top: 10px;right: -6px;
+}
+.beaches-date:last-child:before{
+    display: none;
+}
+/* Container-Icon */
+.container-icon_item{
+    display: flex;
+}
+.icon-img{
+    height: 55px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.container-icon_item > .icon-name{
+    font-size: 26px;
+    font-weight: 900;
+}
+.container-icon_item .text{
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: normal;
+}
+.container-icon_item .icon-view{
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    opacity: 0.6;
+}
+/* Container Discover */
+.container-discover{
+    display: flex;
+    width: 120%;
+}
+.discover-cities{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 50vw;
+    margin-left: -12%;
+    background: url(/assets/img/parallax-5-filter.jpg) top center /cover no-repeat;
+}
+.discover-nature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 50vw;
+    margin-right: -12%;
+    background: url(/assets/img/parallax-6-filter.jpg) top center /cover no-repeat;
+}
+.first-text_decs{
+    color: white;
+    font-size: 14px;
+}
+.first-text_name{
+    font-size: 32px;
+}
+.discover-cities_box{
+    background-color: white;
+    padding: 4px 30px 6px;
+    max-width: fit-content;
+    margin: 30px 0 30px 0;
+    margin-bottom: 20px;
+}
 @keyframes slidein{
     from {
         opacity: 0;
         transform: translateY(-10px);
-    }
-  
+    }  
     to {
         opacity: 1;
         transform: translateX(0);
