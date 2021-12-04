@@ -11,14 +11,17 @@ a{
     text-decoration: none !important;
 }
 a:hover{
-    color: rgb(173, 169, 169) !important;
+    filter:brightness(110%);
 }
 /* size */
 .font-border{
-    font-weight: 100 !important;
+    font-weight: 900 !important;
 }
 .font-small{
     font-size: 12px !important;
+}
+.font-medium{
+    font-size: 20px !important;
 }
 .box{
     margin-left: 12px;
@@ -26,10 +29,13 @@ a:hover{
     border-radius: 30px;
 }
 /* space */
-.ml-28{
+.margin-tb-16{
+    margin: 16px 0 !important;
+}
+.margin-r-28{
     margin-right: -28px !important;
 }
-.ml-16{
+.margin-r-16{
     margin-right: -16px !important;
 }
 .margin-tb-70{
@@ -44,7 +50,7 @@ a:hover{
     color: white;
 }
 .first-text_name{
-    font-size: 54px;
+    font-size: 50px;
     font-weight: bolder;
     margin-bottom: 14px;
 }
@@ -66,9 +72,13 @@ a:hover{
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+.text{
+    opacity: 0.5;
+    letter-spacing: 1.3px;
+}
 .second-text_decs{
     font-size: 16px;
-    opacity: 0.6;
+    opacity: 0.5;
     margin-bottom: 10px;
 }
 .second-decoration{
@@ -85,7 +95,6 @@ a:hover{
     opacity: 0.2;
     text-decoration: line-through;
     letter-spacing: 1.2px;
-
 }
 /* responsity */
 .grid{
@@ -97,9 +106,17 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
 }
+.grid-row-center{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 .col-second{
     flex: 50%;
 }
 .col-third{
     flex: 30%;
+}
+.col-four{
+    flex: 25%;
 }
