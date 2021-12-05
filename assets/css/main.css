@@ -66,6 +66,7 @@
     position: relative;
     padding-top: 18%;
     height: 100vh;
+    width: 99.6vw;
     background: url(/assets/img/slider.jpg) top center / cover no-repeat ;
 }
 .slider_text{
@@ -108,7 +109,7 @@
     border: 2px solid;
 }
 /* Content: Destinations */
-.card{
+.content-des_items .card{
     border: none;
 }
 .card-img{
@@ -136,17 +137,18 @@
 .des-sub{
     position: absolute;
     top: 12px;
-    left: 12.4px;
+    left: 12px;
     background-color: #14b9d5;
-    width: 94.4%;
-    height:93.4%;
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
     display: none;
 }
 .des-main:hover .des-sub{
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: delay ease-in-out .7s;
+    transition: 0.5s all;
+    animation: delay ease .7s;
 }
 .des_items-place{
     margin: 10px 0 20px;
@@ -162,33 +164,27 @@
     font-weight: 700;
 }
 /* Content Holiday */
-.container-holiday{
-    
-}
 .holiday-card-img{
     padding-top: 20%;
-    margin: 0 -9.5%;
     background: url(/assets/img/7.jpg) center/ cover no-repeat;
 }
 .holiday-card-title{
     position: absolute;
-    left: 50px;
+    left: 20%;
     top: 28%;
 }
 .holiday-box{
     position: absolute;
-    right: 60px;
+    right: 23%;
     top: 41%;
-    padding: 8px 30px;
+    padding: 10px 40px 14px;
     font-size: 20px;
     background-color: white;
     color:  rgb(236, 80, 18);
 }
 /* Beaches */
-
-.container-beaches{
+.content-beaches{
     flex: 1;
-    padding-right: 20px;
 }
 .beaches-box{
     background-color: #1bbc9b;
@@ -201,7 +197,7 @@
     text-transform: uppercase;
     font-weight: 900;
 }
-.container-beaches-img{
+.content-beaches-img{
     flex: 2;
     position: relative;
     display: flex;
@@ -241,8 +237,8 @@
 .beaches-date:last-child:before{
     display: none;
 }
-/* Container-Icon */
-.container-icon_item{
+/* content-Icon */
+.content-icon_item{
     display: flex;
 }
 .icon-img{
@@ -250,56 +246,251 @@
     margin-top: 20px;
     margin-right: 20px;
 }
-.container-icon_item > .icon-name{
+.content-icon_item > .icon-name{
     font-size: 26px;
     font-weight: 900;
 }
-.container-icon_item .text{
+.content-icon_item .text{
     font-size: 16px;
     margin-right: 10px;
     font-weight: normal;
 }
-.container-icon_item .icon-view{
+.content-icon_item .icon-view{
     font-size: 16px;
     letter-spacing: 1.3px;
     opacity: 0.6;
 }
-/* Container Discover */
-.container-discover{
+/* content Discover */
+.content-discover{
     display: flex;
-    width: 120%;
 }
 .discover-cities{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30vh;
+    height: 26vh;
     width: 50vw;
-    margin-left: -12%;
     background: url(/assets/img/parallax-5-filter.jpg) top center /cover no-repeat;
 }
 .discover-nature{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30vh;
+    height: 26vh;
     width: 50vw;
-    margin-right: -12%;
     background: url(/assets/img/parallax-6-filter.jpg) top center /cover no-repeat;
 }
-.first-text_decs{
+.content-discover .first-text_decs{
     color: white;
     font-size: 14px;
+    padding: 20px;
 }
-.first-text_name{
-    font-size: 32px;
+.content-discover .first-text_name{
+    margin-bottom: 34px;
+    font-size: 44px;
 }
 .discover-cities_box{
     background-color: white;
-    padding: 4px 30px 6px;
+    padding: 10px 30px 12px;
     max-width: fit-content;
-    margin: 30px 0 30px 0;
-    margin-bottom: 20px;
+    margin: 0;
+}
+/* content-Packages */
+.content-packages .card{
+    margin: 0 10px;
+}
+.packages-slot{
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+}
+.packages-slot--yellow::before{
+    position: absolute;
+    content: "+1";
+    display: block;
+    top: 11px;right: -40px;
+    width: 30px;
+    height: 20px;
+    background-color: #ffd205;
+    color: white;
+    border-radius: 16px;
+    padding: 0 6px;
+}
+.packages-slot--pink::before{
+    position: absolute;
+    content: "+1";
+    display: block;
+    top: 11px;right: -40px;
+    width: 30px;
+    height: 20px;
+    background-color: #f76570;
+    color: white;
+    border-radius: 16px;
+    padding: 0 6px;
+}
+.packages-slot--purple::before{
+    position: absolute;
+    content: "+1";
+    display: block;
+    top: 11px;right: -40px;
+    width: 30px;
+    height: 20px;
+    background-color: #ba71da;
+    color: white;
+    border-radius: 16px;
+    padding: 0 6px;
+}
+.packages-item{
+    display: flex;
+    justify-content: space-between;
+    padding:8px 0 14px;
+    border-top: 1px solid rgb(223, 220, 220);
+    border-bottom: 1px solid rgb(223, 220, 220);
+}
+.packages-card{
+    position: relative;
+}
+.packages-card--yellow::before{
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -22px;right: 26px;
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.packages-card--yellow::after{
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -11px;right: 36px;
+    background: url(/assets/img/arch.png) top center / cover no-repeat;
+    width: 30px;
+    height: 30px;
+}   
+.packages-card--pink::before{
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -22px;right: 26px;
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.packages-card--pink::after{
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -11px;right: 36px;
+    background: url(/assets/img/torii-gate.png) top center / cover no-repeat;
+    width: 30px;
+    height: 30px;
+}   
+.packages-card--purple::before{
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -22px;right: 26px;
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.packages-card--purple::after{
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -11px;right: 36px;
+    background: url(/assets/img/golden-gate.png) top center / cover no-repeat;
+    width: 30px;
+    height: 30px;
+}   
+.package-box{
+    color: white;
+    margin: 8px 0;
+}
+/* Footer */
+.footer{
+    position: relative;
+    height: 700px;
+    background: url(/assets/img/parallax-7.jpg) center / cover no-repeat;
+}
+.footer-header{
+    position: absolute;
+    top: 0;left: 0;right: 0;
+    text-align: center;
+}
+.header-input{
+    margin-top: 28px;
+}
+.header-input .input{
+    border: none;
+    margin-right: 20px;
+    padding: 7px 25px;
+    width: 60%;
+}
+.header-box{
+    color: white;
+}
+.footer-card{
+    position: absolute;
+    left: 0;right: 0;bottom: 100px;
+    background-color: white;
+    border: 0.2px solid #fff2f2f8;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+.footer-travel{
+    padding-right: 14px;
+}
+.footer-icon{
+    height: 45px;
+    margin:10px 0 16px;
+}
+.footer-contact{
+    margin: 26px 0 10px;
+}
+.footer-contact a{
+    color: #333;
+}
+.footer-contact > a > i{
+    font-size: 22px;
+    opacity: 0.7;
+}
+.select-name{
+    font-weight: 900;
+}
+.select-list{
+    opacity: 0.5;
+    list-style-type: none;
+    padding: 8px 2px;
+}
+.select-list li{
+    padding: 2px 0;
+}
+.select-list i{
+    font-size: 10px;
+}
+.footer-end{
+    position: absolute;
+    justify-content: center;
+    left: 0;right: 0;bottom: 34px;
+    border: 0.1px solid #14b9d5;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    background-color: #14b9d5;
+    color: white;
+    padding: 20px;
+}
+.end-text{
+    margin: 0;
 }
 @keyframes slidein{
     from {
@@ -314,8 +505,10 @@
 @keyframes delay{
     from { 
         opacity: 0;
+        transition: all .5s;
     }
     to {
         opacity: 1;
+        transition: all .5s;
     }
 }

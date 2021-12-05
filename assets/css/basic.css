@@ -24,13 +24,13 @@ a:hover{
     font-size: 20px !important;
 }
 .box{
-    margin-left: 12px;
     padding: 6px 18px;
     border-radius: 30px;
 }
 /* space */
 .margin-tb-16{
-    margin: 16px 0 !important;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
 }
 .margin-r-28{
     margin-right: -28px !important;
@@ -44,6 +44,17 @@ a:hover{
 /* primary */
 .center {
     text-align: center !important;
+}
+.btn-pink{
+    background-color: #f76570;
+}
+.btn-purple{
+    background-color: #ba71da;
+}
+.fa{
+    height: 16px;
+    width: 16px;
+    color: black;
 }
 /* usefull */
 .first-text{
@@ -77,7 +88,7 @@ a:hover{
     letter-spacing: 1.3px;
 }
 .second-text_decs{
-    font-size: 16px;
+    font-size: 20px;
     opacity: 0.5;
     margin-bottom: 10px;
 }
@@ -100,7 +111,8 @@ a:hover{
 .grid{
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 80px auto;
+    padding: 0 50px;
 }
 .grid-row{
     display: flex;
@@ -112,7 +124,7 @@ a:hover{
     text-align: center;
 }
 .col-second{
-    flex: 50%;
+    flex: 48%;
 }
 .col-third{
     flex: 30%;

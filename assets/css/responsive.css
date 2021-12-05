@@ -8,6 +8,13 @@
     .navbar-items{
         display: none;
     }
+    .slider_items{
+        display: flex;
+        flex-direction: column;
+    }
+    .slider_item{
+        margin-top: 18px;
+    }
     .slider_item:first-child{
         margin-left: 0;
     }
@@ -15,60 +22,63 @@
         margin-right: 0;
     }
     .first-text_name{
-        font-size: 46px;
+        font-size: 40px;
     }
     .first-text_decs{
         font-size: 16px;
     }
     .holiday-card-img{
         padding-top: 30%;
-        margin: 0 -19%;
-        background: url(/assets/img/7.jpg) center/ cover no-repeat;
     }
-    .container-beaches-img{
+    .content-beaches-img{
         padding-top: 60%;
     }
-    .first-text_name{
+    .holiday-box{
+        padding: 2px 10px 4px;
+        font-size: 16px;
+    }
+    .content-icon_item{
+        margin-left: 30px;
+    }
+    .content-discover{
+        display: flex;
+        flex-direction: column;
+    }
+    .content-discover .first-text_name{
         font-size: 40px;
     }
-    .holiday-box{
-        padding: 4px 10px;
+    .discover-cities{
+        width: 100%;
     }
-}
+    .discover-nature{
+        width: 100%;
+    }
+    .footer{
+        height: 1450px;
+    }
+    .footer-card{
+        opacity: 0.9;
+    }
+    .footer-end{
+        opacity: 0.9;
+    }
+}   
 @media screen and (max-width: 760px){
-    .des-sub{
-        width: 95.4%;
-        height: 95.4%;
-    }
     .slider_text{
         margin-top: 100px;
     }
-    .first-text_name{
-        font-size: 30px;
-    }
 }
 @media screen and (min-width: 761px) and (max-width: 978px){
-    .des-sub{
-        width: 96.5%;
-        height: 96.6%;
-    }
     .slider_text{
         margin-top: 80px;
     }
 }    
 @media screen and (min-width: 979px) and (max-width: 1200px){   
-    .des-sub{
-        width: 96.5%;
-        height: 96.6%;
-    }
     .slider_text{
         margin-top: 50px;
     }
 }
-@media screen and (min-width: 1201px) and (max-width: 1400px){
-    .des-sub{
-        width: 93.5%;
-    }
+@media screen and (min-width: 1201px) and (max-width: 1400px){ 
     .slider_item:first-child{
         margin-left: 100px;
     }
