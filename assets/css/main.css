@@ -163,7 +163,7 @@
     cursor: pointer;
     font-weight: 700;
 }
-/* Content Holiday */
+/* Content: Holiday */
 .holiday-card-img{
     padding-top: 20%;
     background: url(/assets/img/7.jpg) center/ cover no-repeat;
@@ -182,7 +182,7 @@
     background-color: white;
     color:  rgb(236, 80, 18);
 }
-/* Beaches */
+/* Content: Beaches */
 .content-beaches{
     flex: 1;
 }
@@ -237,7 +237,7 @@
 .beaches-date:last-child:before{
     display: none;
 }
-/* content-Icon */
+/* Content: Icon */
 .content-icon_item{
     display: flex;
 }
@@ -260,7 +260,7 @@
     letter-spacing: 1.3px;
     opacity: 0.6;
 }
-/* content Discover */
+/* Content: Discover */
 .content-discover{
     display: flex;
 }
