@@ -8,6 +8,12 @@
     .navbar-items{
         display: none;
     }
+    .slider{
+        padding-top: 930px;
+    }
+    .slider_text{
+        top: 10%;
+    }
     .slider_items{
         display: flex;
         flex-direction: column;
@@ -16,10 +22,10 @@
         margin-top: 18px;
     }
     .slider_item:first-child{
-        margin-left: 0;
+        margin-left: 10px;
     }
     .slider_item:last-child{
-        margin-right: 0;
+        margin-right: 10px;
     }
     .first-text_name{
         font-size: 40px;
