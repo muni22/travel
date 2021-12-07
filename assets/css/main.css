@@ -64,19 +64,18 @@
 /* Slider */
 .slider{
     position: relative;
-    padding-top: 18%;
-    height: 100vh;
-    width: 99.6vw;
+    padding-top: 50%;
     background: url(http://127.0.0.1:5500/assets/img/slider.jpg) top center / cover no-repeat ;
 }
 .slider_text{
     position: absolute;
+    top: 26%;left: 0;right: 0;
     justify-content: center;
     padding: 0 16vw;
 }
 .form-select{
     width: 42%;
-    margin: 40px auto 50px;
+    margin: 40px auto 40px;
     cursor: pointer;
     border-radius: 30px;
 }
@@ -93,10 +92,10 @@
     cursor: pointer;   
 }
 .slider_item:first-child{
-    margin-left: 240px;
+    margin-left: 200px;
 }
 .slider_item:last-child{
-    margin-right: 240px;
+    margin-right: 200px;
 }
 .item-img{
     height: 50px;
@@ -491,6 +490,7 @@
 }
 .end-text{
     margin: 0;
+    font-weight: 900;
 }
 @keyframes slidein{
     from {
