@@ -65,7 +65,7 @@
 .slider{
     position: relative;
     padding-top: 50%;
-    background: url(http://127.0.0.1:5500/assets/img/slider.jpg) top center / cover no-repeat ;
+    background: url(/assets/img/slider.jpg) top center / cover no-repeat ;
 }
 .slider_text{
     position: absolute;
@@ -165,7 +165,7 @@
 /* Content: Holiday */
 .holiday-card-img{
     padding-top: 20%;
-    background: url(http://127.0.0.1:5500/assets/img/7.jpg) center/ cover no-repeat;
+    background: url(/assets/img/7.jpg) center/ cover no-repeat;
 }
 .holiday-card-title{
     position: absolute;
@@ -202,7 +202,7 @@
     display: flex;
     justify-content: center;
     padding-top: 35%;
-    background: url(http://127.0.0.1:5500/assets/img/8.jpg) center / cover no-repeat;
+    background: url(/assets/img/8.jpg) center / cover no-repeat;
 }
 .beaches-time{
     background-color: #14b9d5;
@@ -269,7 +269,7 @@
     justify-content: center;
     height: 26vh;
     width: 50vw;
-    background: url(http://127.0.0.1:5500/assets/img/parallax-5-filter.jpg) top center /cover no-repeat;
+    background: url(/assets/img/parallax-5-filter.jpg) top center /cover no-repeat;
 }
 .discover-nature{
     display: flex;
@@ -277,7 +277,7 @@
     justify-content: center;
     height: 26vh;
     width: 50vw;
-    background: url(http://127.0.0.1:5500/assets/img/parallax-6-filter.jpg) top center /cover no-repeat;
+    background: url(/assets/img/parallax-6-filter.jpg) top center /cover no-repeat;
 }
 .content-discover .first-text_decs{
     color: white;
@@ -366,7 +366,7 @@
     content: "";
     display: block;
     bottom: -11px;right: 36px;
-    background: url(http://127.0.0.1:5500/assets/img/arch.png) top center / cover no-repeat;
+    background: url(/assets/img/arch.png) top center / cover no-repeat;
     width: 30px;
     height: 30px;
 }   
@@ -387,7 +387,7 @@
     content: "";
     display: block;
     bottom: -11px;right: 36px;
-    background: url(http://127.0.0.1:5500/assets/img/torii-gate.png) top center / cover no-repeat;
+    background: url(/assets/img/torii-gate.png) top center / cover no-repeat;
     width: 30px;
     height: 30px;
 }   
@@ -408,7 +408,7 @@
     content: "";
     display: block;
     bottom: -11px;right: 36px;
-    background: url(http://127.0.0.1:5500/assets/img/golden-gate.png) top center / cover no-repeat;
+    background: url(/assets/img/golden-gate.png) top center / cover no-repeat;
     width: 30px;
     height: 30px;
 }   
@@ -420,7 +420,7 @@
 .footer{
     position: relative;
     height: 700px;
-    background: url(http://127.0.0.1:5500/assets/img/parallax-7.jpg) center / cover no-repeat;
+    background: url(/assets/img/parallax-7.jpg) center / cover no-repeat;
 }
 .footer-header{
     position: absolute;
